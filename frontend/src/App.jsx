@@ -65,7 +65,7 @@ export default function App() {
           rehypePlugins={[rehypeHighlight]}
           components={{
             pre: ({ children }) => (
-              <pre className="whitespace-pre-wrap text-green-400 w-full h-full overflow-auto p-2">
+              <pre className="whitespace-pre-wrap text-green-400 w-auto h-auto overflow-auto p-2">
                 {children}
               </pre>
             ),
