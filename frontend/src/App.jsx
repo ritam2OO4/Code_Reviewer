@@ -16,7 +16,7 @@ export default function App() {
     setOutput("Processing...\n");
 
     try {
-      const response = await axios.post("http://localhost:5000/Ai/getPromt", { code });
+      const response = await axios.post("https://aicode-reviewer.onrender.com/Ai/getPromt", { code });
       const resultLines = response.data.split("\n");
       setOutput("");
 
